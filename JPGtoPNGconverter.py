@@ -28,6 +28,7 @@ if not os.path.exists(folder_to_put):
 for filename in os.listdir(folder_to_convert):
 	img = Image.open(f'{folder_to_convert_abs}/{filename}')
 	clean_name = os.path.splitext(filename)[0]
+	#save to new folder created
 	img.save(f"{new_path}/{clean_name}.png", 'png')
 	print("All Done")
 
@@ -39,8 +40,7 @@ for filename in os.listdir(folder_to_convert):
 
 
 	
-	#print("Directory '% s' created" % directory) 
+	 
 
 
 
-#save to the new folder
